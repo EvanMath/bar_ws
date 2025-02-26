@@ -20,8 +20,15 @@ time.sleep(1.0)
 # Construct a new message goal pose. 
 point = PoseStamped()
     
-point.pose.position.x = -3.07
-point.pose.position.y = -4.0
+point.pose.position.x = -4.79
+point.pose.position.y = -7.74
+point.pose.position.z = 0.0
+
+point.pose.orientation.x = 0.0
+point.pose.orientation.y = 0.0
+point.pose.orientation.z = -0.707
+point.pose.orientation.w = 0.707
+
 point.header.frame_id ='map'
 point.header.stamp = clock.now().to_msg()
 

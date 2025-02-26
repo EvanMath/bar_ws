@@ -15,5 +15,6 @@
     "ros.distro": "",
     "llm.backend": "ollama",
     "llm.configTemplate": "ollama/codellama:7b",
-    "llm.modelId": "codellama:7b"
+    "llm.modelId": "codellama:7b",
+    "cmake.sourceDirectory": "/workspace/src/bar_examples/krytn"
 }

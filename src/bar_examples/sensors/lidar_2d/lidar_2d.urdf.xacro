@@ -38,9 +38,9 @@
                         </horizontal>
                     </scan>
                     <range>
-                        <min>0.060</min>
-                        <max>5</max>
-                        <resolution>0.01</resolution>
+                        <min>0.060</min> <!-- minimum distance to detect -->
+                        <max>5</max> <!-- maximum distance to detect -->
+                        <resolution>0.01</resolution> <!-- resolution of the lidar, it can distinguish between 0.01m changes in distance -->
                     </range>
                     <noise>
                         <type>gaussian</type>
