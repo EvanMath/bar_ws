@@ -1,2 +1,1 @@
-repositories:
-- https://github.com/EvanMath/bar_ws
+git https://github.com/EvanMath/bar_ws
