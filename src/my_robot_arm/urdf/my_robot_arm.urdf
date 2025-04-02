@@ -46,8 +46,8 @@
   <joint name="finger_joint" type="prismatic">
     <parent link="base_link"/>
     <child link="finger_link"/>
-    <origin rpy="0.0 -0.0 0.0" xyz="-0.0627 -0.00085 0.06"/>
+    <origin rpy="0.0 -0.0 0.0" xyz="-0.06 0.001 0.06"/>
     <axis xyz="1 0 0"/>
-    <limit effort="1000.0" lower="0.0" upper="0.065" velocity="0.01"/>
+    <limit effort="1000.0" lower="-0.01" upper="0.078" velocity="1000.1"/>
   </joint>
 </robot>

@@ -76,6 +76,14 @@ def generate_launch_description():
         condition=IfCondition(use_rviz),
         )
 
+    # Step 5: Enable the ros2 controllers
+    start_controllers  = Node(
+                package="controller_manager",
+                executable="spawner",
+                arguments=['joint_state_broadcaster', 'gripper_controller'],
+                output="screen",
+            )
+    
     return LaunchDescription([
         use_sim_time_launch_arg,
         use_rviz_arg,
@@ -83,4 +91,5 @@ def generate_launch_description():
         rviz,
         gazebo,
         spawn,
+        start_controllers
     ])

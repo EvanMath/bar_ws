@@ -55,7 +55,7 @@
         <child link="finger_link"/>
         <origin rpy="0.0 -0.0 0.0" xyz="-0.0627 -0.00085 0.06"/>
         <axis xyz="1 0 0"/>
-        <limit effort="1000.0" lower="0.0" upper="0.065" velocity="0.01"/>
+        <limit effort="1000.0" lower="0.0" upper="0.07" velocity="0.01"/>
     </joint>
 
     <joint name="gripper_joint" type="fixed">
@@ -67,7 +67,7 @@
         <hardware>
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
         </hardware>
-        <joint name="finger_link">
+        <joint name="finger_joint">
             <command_interface name="position"/>
             <state_interface name="position">
                 <param name="initial_value">0.0</param>

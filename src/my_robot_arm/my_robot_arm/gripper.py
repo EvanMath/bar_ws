@@ -25,7 +25,7 @@ def main():
     ac.wait_for_server()
     print("server found")
     traj = JointTrajectory()
-    traj.joint_names = ["finger_link"]
+    traj.joint_names = ["finger_joint"]
     
     pos =  [args.j]
     
@@ -36,7 +36,7 @@ def main():
     goal.trajectory = traj
     goal.goal_time_tolerance = Duration(sec=1)
     
-    tol = [JointTolerance(name=n, position=0.01, velocity=0.01) for n in traj.joint_names]
+    tol = [JointTolerance(name=n, position=0.001, velocity=0.01) for n in traj.joint_names]
     ptol = [JointTolerance(name=n, position=1.3, velocity=0.1) for n in traj.joint_names]
 
     print(traj)
